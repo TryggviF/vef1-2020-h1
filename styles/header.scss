@@ -1,1 +1,18 @@
 //TODO Útfæra header f. index og recipe
+.navigation{
+  width: 100%;
+  height : 800px;
+  display : flex;
+  .logo{
+    float: right;
+  }
+
+  .nav{
+    float: right;
+  }
+  
+  .nav__ul{
+    list-style: none;
+    display: flex;
+  }
+}
