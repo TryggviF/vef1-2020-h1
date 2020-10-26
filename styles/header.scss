@@ -1,18 +1,24 @@
 //TODO Útfæra header f. index og recipe
+@import './config';
 .navigation{
   width: 100%;
-  height : 800px;
+  height : 80px;
+  
   display : flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   .logo{
-    float: right;
   }
 
   .nav{
-    float: right;
   }
   
   .nav__ul{
     list-style: none;
     display: flex;
+  }
+  li{
+    margin : 12px;
   }
 }
