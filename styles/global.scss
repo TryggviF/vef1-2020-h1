@@ -3,9 +3,12 @@
   margin: 0;
   padding: 0;
 }
-
+body{
+  font-size: 16px;
+}
 p,
-h4 {
+h4,
+button {
   font-family: 'Poppins', sans-serif, serif;
 }
 
@@ -20,12 +23,11 @@ button {
   color: $beige;
   height: 92px;
   width: 250px;
+}
 
-  &-dark {
-    background-color: $black;
-  }
-
-  &-split {
-    background-image: linear-gradient(0deg, $white, 0%, $beige, 50%);
-  }
+.button-dark {
+  background-color: $black;
+}
+.button-split {
+  background-image: linear-gradient(to left, $white 50%, $beige 50%);
 }
