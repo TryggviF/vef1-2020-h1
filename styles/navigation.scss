@@ -1,2 +1,16 @@
 // Sækja config
 @import './config';
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+.selection{
+  color: $gray-dark;
+  display: flex;
+  justify-content: space-between;
+
+}

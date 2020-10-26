@@ -3,7 +3,9 @@ $beige: #e3cdb1;
 $white: #fff;
 $black: #000;
 $gray: #d0d0d0;
+$gray-dark: #9b9b9b;
 $full: 100%;
+$max-width: 1290px;
 
 @mixin row() {
   display: flex;
