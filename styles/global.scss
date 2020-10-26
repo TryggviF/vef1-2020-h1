@@ -21,7 +21,10 @@ h2,
 h3 {
   font-family: 'Playfair Display', Georgia, serif;
 }
-
+h4{
+  color: $beige;
+  font-size: 1rem;
+}
 button {
   border: 1px solid $beige;
   color: $beige;
