@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
-p {
-  font-family: 'Poppins',Georgia, serif;
+p,
+h4 {
+  font-family: 'Poppins',sans-serif, serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display',Georgia, serif;
 }
