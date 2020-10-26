@@ -1,16 +1,31 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 p,
 h4 {
-  font-family: 'Poppins',sans-serif, serif;
+  font-family: 'Poppins', sans-serif, serif;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Playfair Display',Georgia, serif;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+button {
+  border: 1px solid $beige;
+  color: $beige;
+  height: 92px;
+  width: 250px;
+
+  &-dark {
+    background-color: $black;
+  }
+
+  &-split {
+    background-image: linear-gradient(0deg, $white, 0%, $beige, 50%);
+  }
 }

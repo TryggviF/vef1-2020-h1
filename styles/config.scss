@@ -1,8 +1,9 @@
 $gutter: 30px;
-$beige: #E3CDB1;
+$beige: #e3cdb1;
 $white: #fff;
 $black: #000;
 $gray: #d0d0d0;
+$full: 100%;
 
 @mixin row() {
   display: flex;
