@@ -3,9 +3,10 @@
 
 // Hér skal nota scss @for til að ítra út klösum fyrir grid
 .grid {
-  width: 100%;
   max-width: $max-width;
   margin: auto;
+  overflow: hidden;
+  width: 100%;
 }
 
 .row {
