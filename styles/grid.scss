@@ -2,6 +2,12 @@
 @import './config';
 
 // Hér skal nota scss @for til að ítra út klösum fyrir grid
+.grid {
+  width: 100%;
+  max-width: $max-width;
+  margin: auto;
+}
+
 .row {
   @include row();
 }
