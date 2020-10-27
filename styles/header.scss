@@ -1,5 +1,5 @@
 //TODO Útfæra header f. index og recipe
-// Sækja config
+// Sækja configs
 @import './config';
 header {
   position: sticky;
@@ -33,9 +33,3 @@ header {
     margin-right: 0px;
   }
 }
-
-footer {
-  margin-top: 2000px;
-  padding-top: 5000px;
-}
-
