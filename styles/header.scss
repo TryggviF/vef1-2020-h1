@@ -1,3 +1,41 @@
 //TODO Útfæra header f. index og recipe
 // Sækja config
 @import './config';
+header {
+  position: sticky;
+  top: 0;
+}
+.navigation {
+  align-items: center;
+  background-color: #fff;
+  display : flex;
+  flex-direction: row;
+  height : 80px;
+  justify-content: space-between;
+  margin-top: 20px;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+
+  &__logo{
+  }
+
+  &__ul {
+    list-style: none;
+    display: flex;
+  }
+
+  &__li {
+    margin: 12px;
+  }
+
+  &__li:last-child {
+    margin-right: 0px;
+  }
+}
+
+footer {
+  margin-top: 2000px;
+  padding-top: 5000px;
+}
+
