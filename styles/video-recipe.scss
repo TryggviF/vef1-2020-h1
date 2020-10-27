@@ -1,0 +1,41 @@
+@import './config';
+.video-recipe {
+  background-color: $white;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  .thumbnail {
+    height: 230px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .recipe-date{
+    font-size: 0.875rem;
+    color: $gray-dark;
+    padding-top: $top-padding;
+    padding-left: $left-padding;
+    padding-right: $right-padding;
+  }
+  .recipe-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: $left-padding;
+    padding-right: $right-padding;
+    p {
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-family: 'Playfair Display',Georgia,serif;
+    }
+    a {
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif,serif;
+      font-weight: 400;
+      color: $beige;
+      text-decoration: none;
+    }
+  }
+}
