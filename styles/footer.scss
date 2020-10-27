@@ -1,3 +1,31 @@
 //TODO útfæra footer
 // Sækja config
 @import './config';
+
+.footer {
+  width: 100%;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 339px;
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__icons {
+    list-style: none;
+    display: flex;
+  }
+
+  &__icon {
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__url {
+    color: #d0d0d0;
+  }
+}
