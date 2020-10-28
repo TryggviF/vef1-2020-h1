@@ -14,5 +14,26 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
+    margin-top: -2.75rem;
+  }
+  button{
+    margin-top: auto;
+    margin-bottom: 1rem;
+  }
+  input{
+    background-color: transparent;
+    color: $white;
+    border: 0;
+    border-bottom: 1px solid $beige;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.375rem;
+    font-weight: 700;
+  }
+  input::placeholder{
+    color: #525252;
+  }
+  p{
+    font-size: 0.875rem;
   }
 }
