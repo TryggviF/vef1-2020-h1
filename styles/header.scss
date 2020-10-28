@@ -6,7 +6,7 @@ $nav-margin: 20px;
 
 header {
   position: sticky;
-  top: -$nav-margin;
+  top: 0;
 }
 
 .nav {
@@ -19,17 +19,34 @@ header {
   margin-top: $nav-margin;
   width: 100%;
 
-  &__logo{
+  @media (max-width: 400px) {
+    height: 60px;
+  }
+
+  &__logo {
+  }
+
+  
+  &__link-home {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
   }
 
   &__ul {
-    align-items: flex-end;
+    align-items: center;
     display: flex;
+    height: 100%;
     list-style: none;
   }
 
   &__li {
-    margin: 12px; 
+    margin: 12px;
     
     @media (max-width: 400px) {
       display: none;
@@ -47,40 +64,55 @@ header {
     text-decoration: none;
   }
 
-  &__link-home {
-    color: #000000;
+  // drop down styles
+
+  //bara sjánanlegt á litlum skjám
+  &__li-dropdown {
+    display: none;
+    @media (max-width: 400px) {
+      display: block;
+      height: 100%;
+    }
+  }
+
+  &__dropdown-main-link {
+    color: #000;
+    display: flex;
+    align-items: center;
+    height: 100%;
     text-decoration: none;
   }
 
-  &__li-dropdown{
-    display: none;
-    
-    @media (max-width: 400px) {
-      display: block;
-    }
-  }
-  
+  // ekki sjáanlegt fyrr en á _li-dropdown:hover
   &-dropdown {
     background-color: #fafafa;
-    visibility: hidden;
+    display: none;
+    list-style: none;
     opacity: 0;
     position: absolute;
     right: 0;
-    display: none;
-    list-style: none;
+    visibility: hidden;
   }
 
+  // dropdown þegar sjáanlegt
   &__li-dropdown:hover > &-dropdown {
-    visibility: visible;
-    opacity: 1;
     display: flex;
     flex-direction: column;
-    width: 100vw;
     height: 100vh;
+    opacity: 1;
+    visibility: visible;
+    width: 100vw;
   }
 
+  //container fyrir linka
   &-dropdown__li {
+    border-bottom: #F7F1EB 1px solid;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
+    width: 90%;
   }
 
   &-dropdown__li:first-child {
@@ -90,7 +122,8 @@ header {
   &-dropdown__link {
     color: #000;
     font-size: 60px;
-    text-decoration: none;
     line-height: 90px;
+    margin: auto;
+    text-decoration: none;
   }
 }
