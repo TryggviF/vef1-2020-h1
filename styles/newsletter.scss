@@ -3,8 +3,16 @@
   background-color: $black;
   height: 330px;
   color: white;
+  .grid {
+    height: 100%;
+  }
+  .row {
+    height: 100%;
+    align-content: center;
+  }
   .subscriptions {
     display: flex;
     justify-content: space-between;
+    align-content: center;
   }
 }
