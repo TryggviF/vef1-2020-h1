@@ -1,10 +1,14 @@
 //TODO Útfæra header f. index og recipe
 // Sækja configs
+$navigation-margin: 20px;
+
 @import './config';
+
 header {
   position: sticky;
-  top: 0;
+  top: -$navigation-margin;
 }
+
 .navigation {
   align-items: center;
   background-color: #fff;
@@ -12,24 +16,35 @@ header {
   flex-direction: row;
   height : 80px;
   justify-content: space-between;
-  margin-top: 20px;
-  position: sticky;
-  top: 0px;
+  margin-top: $navigation-margin;
   width: 100%;
 
   &__logo{
   }
 
   &__ul {
-    list-style: none;
+    align-items: flex-end;
     display: flex;
+    list-style: none;
   }
 
   &__li {
     margin: 12px;
   }
-
+  
   &__li:last-child {
     margin-right: 0px;
   }
+
+  &__link {
+    color: #9b9b9b;
+    font-size: 15px;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+ &__link-home {
+   color: #000000;
+   text-decoration: none;
+ }   
 }
