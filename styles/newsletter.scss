@@ -1,0 +1,10 @@
+@import './config.scss';
+.newsletter {
+  background-color: $black;
+  height: 330px;
+  color: white;
+  .subscriptions {
+    display: flex;
+    justify-content: space-between;
+  }
+}
