@@ -7,6 +7,10 @@
   margin: auto;
   overflow: hidden;
   width: 100%;
+
+  &-header{
+    overflow: visible;
+  }
 }
 
 .row {
