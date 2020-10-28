@@ -1,3 +1,129 @@
 //TODO Útfæra header f. index og recipe
-// Sækja config
+// Sækja configs
+$nav-margin: 20px;
+
 @import './config';
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.nav {
+  align-items: center;
+  background-color: #fff;
+  display : flex;
+  flex-direction: row;
+  height : 80px;
+  justify-content: space-between;
+  margin-top: $nav-margin;
+  width: 100%;
+
+  @media (max-width: 400px) {
+    height: 60px;
+  }
+
+  &__logo {
+  }
+
+  
+  &__link-home {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+
+  &__ul {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    list-style: none;
+  }
+
+  &__li {
+    margin: 12px;
+    
+    @media (max-width: 400px) {
+      display: none;
+    }
+  }
+  
+  &__li:last-child {
+    margin-right: 0px;
+  }
+
+  &__link {
+    color: #9b9b9b;
+    font-size: 15px;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+  // drop down styles
+
+  //bara sjánanlegt á litlum skjám
+  &__li-dropdown {
+    display: none;
+    @media (max-width: 400px) {
+      display: block;
+      height: 100%;
+    }
+  }
+
+  &__dropdown-main-link {
+    color: #000;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  // ekki sjáanlegt fyrr en á _li-dropdown:hover
+  &-dropdown {
+    background-color: #fafafa;
+    display: none;
+    list-style: none;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+  }
+
+  // dropdown þegar sjáanlegt
+  &__li-dropdown:hover > &-dropdown {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    opacity: 1;
+    visibility: visible;
+    width: 100vw;
+  }
+
+  //container fyrir linka
+  &-dropdown__li {
+    border-bottom: #F7F1EB 1px solid;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+
+  &-dropdown__li:first-child {
+    margin-top: 30px;
+  }
+
+  &-dropdown__link {
+    color: #000;
+    font-size: 60px;
+    line-height: 90px;
+    margin: auto;
+    text-decoration: none;
+  }
+}

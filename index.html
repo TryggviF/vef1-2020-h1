@@ -8,23 +8,41 @@
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
     </head>
     <body>
-      <header>
-        <div class = "navigation">
-          <div class = title><p>yum&yum</p></div>
-          <div class = selection><a>Recipes  &nbsp;</a><a>Videos&nbsp;</a><a>About us</a></div>
-        </div>
-        <div class = "hero-section">
-          <h4>Our latest recipe</h4>
-          <h1>Pumpkin pie</h1>
-          <p>Pumpkin Pie is a sweet dessert pie with a spiced, pumpkin-based custard filling. The pumpkin is a symbol of harvest time, and pumpkin pie is often eaten during the fall and early winter</p>
-          <button class="button-split">See more</button>
-
+      <header class = "grid-header">
+        <div class = "nav">
+          <div class = "nav__logo"><a class = "nav__link-home" href="">yum&yum</a></div>
+          <nav class = "nav__nav">
+            <ul class = "nav__ul">
+              <li class="nav__li"><a class = "nav__link" href="text-recipe.html">Recipes</a></li>
+              <li class="nav__li"><a class = "nav__link" href="video-recipe.html">Videos</a></li>
+              <li class="nav__li"><a class = "nav__link" href="">About us</a></li>
+              <!--navigation sem er bara visible í max-width:400px-->
+              <li class="nav__li-dropdown">
+                <a class="nav__dropdown-main-link" href="#">down</a>
+                <ul class="nav-dropdown">
+                  <li class="nav-dropdown__li"><a class = "nav-dropdown__link" href="index.html">Home</a></li>
+                  <li class="nav-dropdown__li"><a class = "nav-dropdown__link" href="text-recipe.html">Recipes</a></li>
+                  <li class="nav-dropdown__li"><a class = "nav-dropdown__link" href="video-recipe.html">Videos</a></li>
+                  <li class="nav-dropdown__li"><a class = "nav-dropdown__link" href="">About us</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
       <main class = "grid">
+        <div class = "hero-section">
+          <div class = "hero-section__text">
+            <h4>Our latest recipe</h4>
+            <h1>Pumpkin pie</h1>
+            <p>Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based custard filling. The pumpkin is a symbol of harvest time, and pumpkin pie is often eaten during the fall and early winter.</p>
+            <button class = "button-split"><p>See </p><p>more</p></button>
+          </div>
+          <div class = "hero-section__image"><img src="img/pumpkin-pie.png" alt=""></div>
+        </div>
         <section class = "latest-recipes-section">
-          <h4>Get ready to get busy</h4>
-          <h2>Check out our latest recipes</h2>
+          <h4 class = "row col">Get ready to get busy</h4>
+          <h2 class = "row col"><p>Check out our</p><p>latest recipes</p></h2>
           <div class = "row">
             <div class = "col col-4">
               <div class = "recipe-card">
@@ -122,8 +140,8 @@
           <button>See more</button>
         </section>
         <section class = "video-section row">
-          <h4>Want some action?</h4>
-          <h2>Check out our video recipes</h2>
+          <h4 class = "row col">Want some action?</h4>
+          <h2 class= "row col">Check out our video recipes</h2>
           <div class = "row">
             <div class = "col col-4">
               <div class = "video-recipe">
@@ -171,25 +189,25 @@
           <button>See more</button>
         </section>
       </main>
-      <div class = "newsletter">
+      <div class = "newsletter grid">
         <div class = "row">
           <div class ="col col-5">
             <div class ="newsletter-content">
               <h4>Craving more?</h4>
               <h3>Subscribe to our newsletter</h3>
             </div>
-            <div class = "col col-offset-1 col-6">
-              <div class = "subscriptions">
-                <div class = "email-field">
-                  <p>Email</p>
-                  <input type="text">Enter your mail here</input>
-                </div>
-                <div class = "email-field">
-                  <p>Email</p>
-                  <input type="text">Enter your mail here</input>
-                </div>
-                <button class="button-dark">Subscribe now</button>
+          </div>
+          <div class = "col offset-col-1 col-6">
+            <div class = "subscriptions">
+              <div class = "email-field">
+                <p>Email</p>
+                <input type="text">Enter your mail here</input>
               </div>
+              <div class = "email-field">
+                <p>Email</p>
+                <input type="text">Enter your mail here</input>
+              </div>
+              <button class="button-dark">Subscribe now</button>
             </div>
           </div>
         </div>

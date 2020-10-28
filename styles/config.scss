@@ -1,11 +1,26 @@
+$max-width : 1290px;
 $gutter: 30px;
 $beige: #e3cdb1;
 $white: #fff;
+$white-off: #fafafa;
 $black: #000;
 $gray: #d0d0d0;
 $gray-dark: #9b9b9b;
 $full: 100%;
 $max-width: 1290px;
+$bottom-margin: 1.5rem;
+$top-margin: 1.5rem;
+$bottom-padding: 1.5rem;
+$top-padding: 1.5rem;
+$left-padding: 1.5rem;
+$right-padding: 1.5rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
 
 @mixin row() {
   display: flex;

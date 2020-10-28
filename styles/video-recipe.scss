@@ -1,20 +1,15 @@
-//TODO Útfæra stýla fyrir spjöld
-// Sækja config
 @import './config';
-.recipe-card {
+.video-recipe {
   background-color: $white;
-  justify-content: space-between;
+  height: 330px;
   display: flex;
   flex-direction: column;
-  height: 390px;
-  margin-bottom: $bottom-margin;
-  padding-bottom: $bottom-padding;
-  .recipe-image{
-    height: 290px;
+  .thumbnail {
+    height: 230px;
     img {
       height: 100%;
       width: 100%;
-      object-fit: fill;
+      object-fit: cover;
     }
   }
   .recipe-date{
@@ -44,5 +39,4 @@
       margin: auto;
     }
   }
-
 }
