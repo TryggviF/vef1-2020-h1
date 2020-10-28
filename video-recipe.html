@@ -8,14 +8,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class = "grid">
-      <div class = "navigation">
-        <div class = "navigation__logo"><a class = "navigation__link-home" href="index.html">yum&yum</a></div>
-        <nav class = "navigation__nav">
-          <ul class = "navigation__ul">
-            <li class="navigation__li"><a class = "navigation__link" href="text-recipe.html">Recipes</a></li>
-            <li class="navigation__li"><a class = "navigation__link" href="">Videos</a></li>
-            <li class="navigation__li"><a class = "navigation__link" href="">About us</a></li>
+    <header class = "grid-header">
+      <div class = "nav">
+        <div class = "nav__logo"><a class = "nav__link-home" href="">yum&yum</a></div>
+        <nav class = "nav__nav">
+          <ul class = "nav__ul">
+            <li class="nav__li"><a class = "nav__link" href="text-recipe.html">Recipes</a></li>
+            <li class="nav__li"><a class = "nav__link" href="video-recipe.html">Videos</a></li>
+            <li class="nav__li"><a class = "nav__link" href="">About us</a></li>
+            <!--navigation sem er bara visible í max-width:400px-->
+            <li class="nav__li-dropdown">
+              <a class="nav__dropdown-main-link" href="#">down</a>
+              <ul class="nav-dropdown">
+                <li class="nav-dropdown__li"><a class = "nav-dropdown__link" href="index.html">Home</a></li>
+                <li class="nav-dropdown__li"><a class = "nav-dropdown__link" href="text-recipe.html">Recipes</a></li>
+                <li class="nav-dropdown__li"><a class = "nav-dropdown__link" href="video-recipe.html">Videos</a></li>
+                <li class="nav-dropdown__li"><a class = "nav-dropdown__link" href="">About us</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </div>
