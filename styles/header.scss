@@ -13,17 +13,18 @@ header {
 }
 
 .nav {
-  align-items: center;
   background-color: #fff;
   display : flex;
   flex-direction: row;
+  align-items: center;
   height : 80px;
   justify-content: space-between;
   margin-top: $nav-margin;
   width: 100%;
+  margin-top:0;
 
   @media (max-width: 400px) {
-    height: 60px;
+    padding-bottom: 7px;
   }
 
   &__logo {
@@ -40,6 +41,9 @@ header {
   &__h3 {
     color: #fff;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    @media (max-width:400px) {
+      height:100%;
+    }
   }
 
   &__link-home {
@@ -51,6 +55,10 @@ header {
     display: flex;
     align-items: center;
     height: 60px;
+  }
+
+  &__second {
+    height: 20px
   }
 
   &__ul {
