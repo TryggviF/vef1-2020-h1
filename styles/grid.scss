@@ -41,4 +41,7 @@
       @include offset-width-percent($i);
     }
   }
+  .center-text-sm {
+    text-align: center;
+  }
 }
