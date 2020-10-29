@@ -17,9 +17,9 @@ styles möppu og síðan sameinaðir í styles.scss, sem skal síðan þýða ti
 
 Þáttakendur þessa verkefnis eru: 
 
-* Tryggvi Freyr Sigurgiersson - tfs2@hi.is - `Tryggvi F`
+* Tryggvi Freyr Sigurgeirsson - tfs2@hi.is - `Tryggvi F`
 * Jóhannes Kári Sólmundarson - jks21@hi.is - `jaykaytherobot`
-* Marcelo Felix Auditbert - mfa5@hi.is - `GitCelo`
+* Marcelo Felix Auditbert - mfa5@hi.is - `Gitcelo`
 * Andreas Máni Helgason - amh50@hi.is - `amh50`
 
 > Útgáfa 1.0
