@@ -1,3 +1,4 @@
+@import './config.scss';
 * {
   box-sizing: border-box;
   margin: 0;
@@ -45,24 +46,19 @@ button {
   width: 250px;
   background-color: $transparent;
   font-size: 1rem;
-  p {
-    font-size: 1rem;
-    margin: auto 0;
-  }
-  p:first-of-type {
-    margin-right: 0.5rem;
-  }
+  padding: 0 auto;
+  transition: background-color ease-in 500ms;
+  line-height: 52px;
+
   &:hover {
-    background-image: linear-gradient(to left, $transparent 53.2%, $beige 46.8%);
-    p:first-of-type{
-      color: $white;
-    }
+    background-color: $beige;
+    color: $white;
+  }
+  &#text{
+    margin: 0 auto;
   }
 }
 
-.button-dark:hover{
-  background-image: linear-gradient(to left, $transparent 42%, $beige 43%);
-}
 section{
   margin-bottom: $section-margin;
 }
