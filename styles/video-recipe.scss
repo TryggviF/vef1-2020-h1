@@ -54,3 +54,20 @@
 br {
   margin-bottom: 5px;
 }
+
+.video-image {
+  height: 569.99px;
+  width: 100vw;
+  padding-top: 134px;
+  padding-bottom: 154px;
+  background-color: #000;
+  color:  #ffffff;
+  background-image: linear-gradient(to right, $black 40%, $transparent 80%),
+  url("img/pie-video-image.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+
+
+
