@@ -8,9 +8,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
   </head>
   <body>
-<<<<<<< HEAD
     <header class = "grid-header">
       <div class = "nav">
+<html lang="is">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial scale=1">
+  <link rel="stylesheet" href="grid-overlay.css">
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@200;400&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="grid-header">
+    <div class="grid">
+      <div class="nav">
         <div class="nav__logo"><a class="nav__link-home" href="index.html">
           <div class="nav__logo-flex">
             <div class="nav__yum">
@@ -21,6 +36,16 @@
             </div>
             <div class="nav__yum">
               <h3>yum</h3>
+            <div class="nav__logo-flex">
+              <div class="nav__yum">
+                <h3>yum</h3>
+              </div>
+              <div class="nav__amp">
+                <h3 class="nav__h3">&</h3>
+              </div>
+              <div class="nav__yum">
+                <h3>yum</h3>
+              </div>
             </div>
           </div>
         </a></div>
@@ -29,11 +54,16 @@
             <li class="nav__li"><a class = "nav__link" href="recipes-overview.html">Recipes</a></li>
             <li class="nav__li"><a class = "nav__link" href="video-recipe.html">Videos</a></li>
             <li class="nav__li"><a class = "nav__link" href="#">About us</a></li>
+          </a></div>
+        <nav class="nav__nav">
+          <ul class="nav__ul">
+            <li class="nav__li"><a class="nav__link" href="recipes-overview.html">Recipes</a></li>
+            <li class="nav__li"><a class="nav__link" href="video-recipe.html">Videos</a></li>
+            <li class="nav__li"><a class="nav__link" href="#">About us</a></li>
             <!--navigation sem er bara visible í max-width:400px-->
             <li class="nav__li-dropdown">
               <a class="nav__dropdown-main-link" href="#">
-                <div class="nav__rectangle"></div>
-                <div class="nav__rectangle"></div>
+@ -36,164 +41,189 @@
                 <div class="nav__rectangle"></div>
               </a>
               <ul class="nav-dropdown">
@@ -41,41 +71,15 @@
                 <li class="nav-dropdown__li"><a class = "nav-dropdown__link" href="recipes-overview.html">Recipes</a></li>
                 <li class="nav-dropdown__li"><a class = "nav-dropdown__link" href="video-recipe.html">Videos</a></li>
                 <li class="nav-dropdown__li"><a class = "nav-dropdown__link" href="#">About us</a></li>
-=======
-    <header class="grid-header">
-      <div class="nav">
-        <div class="nav__logo"><a class="nav__link-home" href="index.html">
-            <div class="nav__logo-flex">
-              <div class="nav__yum"><h3>yum</h3></div>
-              <div class="nav__amp"><h3 class = "nav__h3">&</h3></div>
-              <div class="nav__yum"><h3>yum</h3></div>
-            </div>
-          </a></div>
-        <nav class="nav__nav">
-          <ul class="nav__ul">
-            <li class="nav__li"><a class="nav__link" href="text-recipe.html">Recipes</a></li>
-            <li class="nav__li"><a class="nav__link" href="video-recipe.html">Videos</a></li>
-            <li class="nav__li"><a class="nav__link" href="">About us</a></li>
-            <!--navigation sem er bara visible í max-width:400px-->
-            <li class="nav__li-dropdown">
-              <a class="nav__dropdown-main-link" href="#">
-                <div class = "nav__rectangle"></div>
-                <div class = "nav__rectangle"></div>
-                <div class = "nav__rectangle"></div>
-              </a>
-              <ul class="nav-dropdown">
                 <li class="nav-dropdown__li"><a class="nav-dropdown__link" href="index.html">Home</a></li>
-                <li class="nav-dropdown__li"><a class="nav-dropdown__link" href="text-recipe.html">Recipes</a></li>
+                <li class="nav-dropdown__li"><a class="nav-dropdown__link" href="recipes-overview.html">Recipes</a></li>
                 <li class="nav-dropdown__li"><a class="nav-dropdown__link" href="video-recipe.html">Videos</a></li>
-                <li class="nav-dropdown__li"><a class="nav-dropdown__link" href="">About us</a></li>
->>>>>>> video-recipe_functions
+                <li class="nav-dropdown__li"><a class="nav-dropdown__link" href="#">About us</a></li>
               </ul>
             </li>
           </ul>
         </nav>
       </div>
-    </header>
-    <main class = "grid">
       <div class = "hero-section">
         <h1>Pumpkin pie</h1>
         <div class = "specs">
@@ -83,9 +87,26 @@
           <div class = "spec-item"><img src="" alt=""><p>6 people</p></div>
           <div class = "spec-item"><img src="" alt=""><p>1 hour</p></div>
           <div></div>
+    </div>
+  </header>
+  <main class="grid">
+    <div class="hero-section">
+      <h1>Pumpkin pie</h1>
+      <div class="specs">
+        <div class="spec-item"><img src="" alt="">
+          <p>Easy Recipe</p>
+        </div>
+        <div class="spec-item"><img src="" alt="">
+          <p>6 people</p>
+        </div>
+        <div class="spec-item"><img src="" alt="">
+          <p>1 hour</p>
         </div>
         <p>Pumpkin Pie is a sweet dessert pie with a spiced, pumpkin-based custard filling. The pumpkin is a symbol of harvest time, and pumpkin pie is often eaten during the fall and early winter</p>
+        <div></div>
       </div>
+    </header>
+    <main class = "grid">
       <div class = "row">
         <div class = "col col-4">
           <div class = "ingredients">
@@ -108,6 +129,23 @@
                 <li>1 cup of sugar</li>
               </ul>
             </div>
+      <p>Pumpkin Pie is a sweet dessert pie with a spiced, pumpkin-based custard filling. The pumpkin is a symbol of
+        harvest time, and pumpkin pie is often eaten during the fall and early winter</p>
+    </div>
+
+
+    <div class="row">
+      <div class="col col-4">
+        <div class="ingredients">
+          <h2 class=recipe-heading>Ingredients</h2>
+          <div class="ingredient-list">
+            <p>For the dough</p>
+            <ul>
+              <li>1 tbs of water</li>
+              <li>2 cups of flour</li>
+              <li>2 eggs</li>
+              <li>1 cup of sugar</li>
+            </ul>
           </div>
         </div>
         <div class = "col col-8">
@@ -127,6 +165,14 @@
               Remove your burgers to another plate and carefully wipe your pan or griddle clean with kitchen paper.
               Halve your burger buns and lightly toast them on the griddle or in the pan. Also great with a chopped salad.
             </p>
+          <div class="ingredient-list">
+            <p>For the filling</p>
+            <ul>
+              <li>1 tbs of water</li>
+              <li>2 cups of flour</li>
+              <li>2 eggs</li>
+              <li>1 cup of sugar</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -147,6 +193,45 @@
                   <div class = "recipe-select"><a href="">See</a></div>
                 </div>
               </div>
+      <div class="col col-8">
+        <div class="recipe-instructions">
+          <h2 class="recipe-heading">The method</h2>
+          <p>
+            Wrap the crackers in a tea towel and smash up until fine, breaking up any big bits with your hands, and put
+            them into a large bowl.
+            Finely chop the parsley, including the stalks. Add the parsley, mustard, if using, and minced beef to the
+            bowl. Crack in the egg and add a good pinch of salt and pepper.
+            With clean hands, scrunch and mix everything up well. Divide into 6 and pat and mould each piece into a
+            roundish shape about 2cm thick. Drizzle the burgers with oil, put on a plate, cover and place in the fridge
+            until needed (this helps them to firm up).
+          </p>
+          <p>
+            Preheat a large griddle or frying pan for about 4 minutes on a high heat. Turn the heat down to medium.
+            Place the burgers on the griddle or in the pan and use a spatula to lightly press down on them, making sure
+            the burger is in full contact. Cook them to your liking for 3 or 4 minutes on each side – you may need to
+            cook them in two batches.
+          </p>
+          <p>
+            Wash and dry a few small lettuce leaves, tearing up the larger ones. Slice the tomatoes. Peel and finely
+            slice the red onion. Slice the gherkins lengthways as finely as you can. Place all this on a platter and put
+            in the middle of the table with plates, cutlery, ketchup and drinks.
+            Remove your burgers to another plate and carefully wipe your pan or griddle clean with kitchen paper.
+            Halve your burger buns and lightly toast them on the griddle or in the pan. Also great with a chopped salad.
+          </p>
+        </div>
+      </div>
+    </div>
+    <section class="video-section row">
+      <h4>All the great recipes</h4>
+      <h2>Check out our video recipes</h2>
+      <div class="row">
+        <div class="col col-4">
+          <div class="video-recipe">
+            <div class=thumbnail>
+              <img src="img/legume-video.png" alt="">
+            </div>
+            <div class="recipe-date">
+              <p>August 2016</p>
             </div>
             <div class = "col col-4">
               <div class = "video-recipe">
@@ -160,7 +245,18 @@
                   <div class = "recipe-name"><p>Blossoming cookie</p></div>
                   <div class = "recipe-select"><a href="">See</a></div>
                 </div>
+            <div class="recipe-content">
+              <div class="recipe-name">
+                <p>Legumes printainers</p>
               </div>
+              <div class="recipe-select"><a href="">See</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-4">
+          <div class="video-recipe">
+            <div class=thumbnail>
+              <img src="img/cookie-video.png" alt="">
             </div>
             <div class = "col col-4">
               <div class = "video-recipe">
@@ -174,7 +270,14 @@
                   <div class = "recipe-name"><p>Questches pie</p></div>
                   <div class = "recipe-select"><a href="">See</a></div>
                 </div>
+            <div class="recipe-date">
+              <p>August 2016</p>
+            </div>
+            <div class="recipe-content">
+              <div class="recipe-name">
+                <p>Blossoming cookie</p>
               </div>
+              <div class="recipe-select"><a href="">See</a></div>
             </div>
           </div>
           <button>See more</button>
@@ -187,7 +290,34 @@
             <div class="newsletter-content center-text-sm">
               <h4>Craving more?</h4>
               <h3>Subscribe to our newsletter</h3>
+        </div>
+        <div class="col col-4">
+          <div class="video-recipe">
+            <div class=thumbnail>
+              <img src="img/pie-video.png" alt="">
             </div>
+            <div class="recipe-date">
+              <p>August 2016</p>
+            </div>
+            <div class="recipe-content">
+              <div class="recipe-name">
+                <p>Questches pie</p>
+              </div>
+              <div class="recipe-select"><a href="">See</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button>See more</button>
+    </section>
+  </main>
+  <div class="newsletter ">
+    <div class="grid">
+      <div class="row">
+        <div class="col col-5">
+          <div class="newsletter-content center-text-sm">
+            <h4>Craving more?</h4>
+            <h3>Subscribe to our newsletter</h3>
           </div>
           <div class="col offset-col-1 col-6">
             <div class="subscriptions">
@@ -200,12 +330,27 @@
                   <p>Email</p>
                   <input type="text"></input>
                 </div>
+        </div>
+        <div class="col offset-col-1 col-6">
+          <div class="subscriptions">
+            <div class="email-inputs">
+              <div class="email-field">
+                <p>Email</p>
+                <input type="text" placeholder="Enter your mail here"></input>
+              </div>
+              <div class="email-field">
+                <p>Email</p>
+                <input type="text"></input>
               </div>
               <button class="button-dark">
                 <p>Subscribe</p>
                 <p>now</p>
               </button>
             </div>
+            <button class="button-dark">
+              <p>Subscribe</p>
+              <p>now</p>
+            </button>
           </div>
         </div>
       </div>
@@ -215,6 +360,11 @@
         <div class = "row">
           <div class = "horizontal-line col"></div>
         </div>
+  </div>
+  <footer class="footer">
+    <div class="grid">
+      <div class="row">
+        <div class="horizontal-line col"></div>
       </div>
       <p class="footer__text">Come and join us for more recipes</p>
       <ul class="footer__icons">
@@ -225,4 +375,15 @@
       <div class="footer__url">yamyam.com</div>
     </footer>
   </body>
+    </div>
+    <p class="footer__text">Come and join us for more recipes</p>
+    <ul class="footer__icons">
+      <li class="footer__icon"><img src="img/Facebook-Icon.svg"></li>
+      <li class="footer__icon"><img src="img/Twitter-Icon.svg"></li>
+      <li class="footer__icon"><img src="img/YouTube-Icon.svg"></li>
+    </ul>
+    <div class="footer__url">yamyam.com</div>
+  </footer>
+</body>
+
 </html>
