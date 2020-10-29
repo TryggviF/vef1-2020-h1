@@ -5,6 +5,8 @@ $nav-margin: 20px;
 @import './config';
 
 header {
+  max-width: 1290px;
+  margin: auto;
   position: sticky;
   top: 0;
 }
@@ -24,9 +26,14 @@ header {
   }
 
   &__logo {
+    min-width:1px;
   }
 
-  
+  &__logo-flex{
+    display:flex;
+    flex-direction: row;
+  }
+
   &__link-home {
     color: #000000;
     text-decoration: none;
@@ -47,12 +54,12 @@ header {
 
   &__li {
     margin: 12px;
-    
+
     @media (max-width: 400px) {
       display: none;
     }
   }
-  
+
   &__li:last-child {
     margin-right: 0px;
   }
@@ -76,11 +83,20 @@ header {
   }
 
   &__dropdown-main-link {
+    margin-right: 10px;
+    margin-top: 10px;
     color: #000;
     display: flex;
-    align-items: center;
-    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40%;
     text-decoration: none;
+  }
+
+  &__rectangle {
+    height: 3px;
+    width: 30px;
+    background-color: #000;
   }
 
   // ekki sjáanlegt fyrr en á _li-dropdown:hover
