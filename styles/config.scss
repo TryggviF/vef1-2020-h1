@@ -38,3 +38,12 @@ $right-padding: 1.5rem;
 @mixin offset-column($offset) {
   margin-left: ($offset / 12 * 100) * 1%;
 }
+
+@mixin width-percent($number) {
+  width: $number * 1%;
+}
+
+@mixin offset-width-percent($offset) {
+  margin-left: $offset * 1%;
+  margin-right: $offset * 1%;
+}

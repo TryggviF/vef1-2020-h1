@@ -23,33 +23,22 @@
   width: 100%;
 }
 
-@for $i from 1 to 12 {
-  .col-#{$i} {
-    @include column($i);
-  }
-  .offset-col-#{$i} {
-    @include offset-column($i);
-  }
-}
-
-@media (max-width: 799px) and (min-width: 500px) {
   @for $i from 1 to 12 {
-    .col-#{$i}-m {
+    .col-#{$i} {
       @include column($i);
     }
-    .offset-col-#{$i}-m {
-      @include offset-column($i);
+    .offset-col-#{$i} {
+     @include offset-column($i);
     }
   }
-}
 
-@media (max-width: 499px) {
-  @for $i from 1 to 12 {
-    .col-#{$i}-sm {
-      @include column($i);
+@media (max-width: 500px) {
+  @for $i from 1 to 100 {
+    .width-percent-#{$i}-sm {
+      @include width-percent($i);
     }
-    .offset-col-#{$i}-sm {
-      @include offset-column($i);
+    .offset-width-percent-#{$i}-sm {
+      @include offset-width-percent($i);
     }
   }
 }
