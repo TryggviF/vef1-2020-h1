@@ -8,10 +8,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class = "navigation">
-        <div class = title><p>yum&yum</p></div>
-        <div class = selection><a>Recipes</a><a>Videos</a><a>About us</a></div>
+    <header class="grid-header">
+      <div class="nav">
+        <div class="nav__logo"><a class="nav__link-home" href="index.html">
+            <div class="nav__logo-flex">
+              <div class="nav__yum">
+                <h3>yum</h3>
+              </div>
+              <div class="nav__amp">
+                <h3 class="nav__h3">&</h3>
+              </div>
+              <div class="nav__yum">
+                <h3>yum</h3>
+              </div>
+            </div>
+          </a></div>
+        <nav class="nav__nav">
+          <ul class="nav__ul">
+            <li class="nav__li"><a class="nav__link" href="#">Recipes</a></li>
+            <li class="nav__li"><a class="nav__link" href="video-recipe.html">Videos</a></li>
+            <li class="nav__li"><a class="nav__link" href="#">About us</a></li>
+            <!--navigation sem er bara visible í max-width:400px-->
+            <li class="nav__li-dropdown">
+              <a class="nav__dropdown-main-link" href="#">
+                <div class="nav__rectangle"></div>
+                <div class="nav__rectangle"></div>
+                <div class="nav__rectangle"></div>
+              </a>
+              <ul class="nav-dropdown">
+                <li class="nav-dropdown__li"><a class="nav-dropdown__link" href="index.html">Home</a></li>
+                <li class="nav-dropdown__li"><a class="nav-dropdown__link" href="#">Recipes</a></li>
+                <li class="nav-dropdown__li"><a class="nav-dropdown__link" href="video-recipe.html">Videos</a></li>
+                <li class="nav-dropdown__li"><a class="nav-dropdown__link" href="#">About us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class ="grid">
