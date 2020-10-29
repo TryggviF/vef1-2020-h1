@@ -41,9 +41,13 @@
   }
 }
 .video-section {
-  margin-bottom: 140px;
+  margin-bottom: $section-margin;
   button {
     margin: 0 auto;
     margin-top: 50px;
   }
+  &__footer {
+    display: flex;
+  }
 }
+
