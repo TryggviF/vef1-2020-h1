@@ -32,7 +32,7 @@
     }
   }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   @for $i from 1 to 100 {
     .width-percent-#{$i}-sm {
       @include width-percent($i);

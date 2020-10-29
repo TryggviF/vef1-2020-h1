@@ -60,5 +60,20 @@ button {
 .button-dark:hover{
   background-image: linear-gradient(to left, $transparent 42%, $beige 43%);
 }
+section{
+  margin-bottom: $section-margin;
+}
+@media(min-width: 800px){
+.horizontal-line {
+  border: 1px solid $gray;
+  &__small{
+    border: 0.5px solid $gray;
+    width: calc(33.33333% + 15px);
+    height: 1px;
+    margin-bottom: 26px;
+    align-self: flex-end;
+  }
+}
+}
 
 
