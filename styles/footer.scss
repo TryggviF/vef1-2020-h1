@@ -3,21 +3,21 @@
 @import './config';
 
 .footer {
-  align-items: center;
-  background-color: #f2f2f2;
+  width: 100%;
+  background-color: #F2F2F2;
   display: flex;
   flex-direction: column;
-  height: 339px;
+  align-items: center;
   justify-content: center;
-  width: 100%;
+  height: 339px;
 
   &__text {
     margin-bottom: 30px;
   }
 
   &__icons {
-    display: flex;
     list-style: none;
+    display: flex;
   }
 
   &__icon {
@@ -27,6 +27,5 @@
 
   &__url {
     color: #d0d0d0;
-    margin-bottom: 20px;
   }
 }
