@@ -2,12 +2,25 @@
 @import './config';
 .hero-section {
   display: flex;
+  position: relative;
   justify-content: space-between;
   height: 100vh;
   background-color: $white-off;
-  background-image: url("img/pumpkin-pie.png"); 
   background-repeat: no-repeat;
   background-position: bottom right;
+  overflow: visible;
+
+  &-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    
+    img {
+      float: right;
+    }
+  }
+
   &__text {
     width: 100%;
     display: flex;
