@@ -3,6 +3,31 @@
   background-color: $black;
   height: 330px;
   color: white;
+  
+  @media (max-width: 1300px) {
+    height: auto;
+  }
+
+  &-box {
+    @media (max-width: 1300px) {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 64px;
+    }
+  }
+
+  &-content {
+    margin-bottom: 40px;
+
+    @media (max-width: 1300px) {
+      text-align: center; 
+
+      h3 {
+        font-size: 20px;
+      }
+    }
+  }
+
   .grid {
     height: 100%;
   }
@@ -15,6 +40,13 @@
     justify-content: space-between;
     align-content: center;
     margin-top: -2.75rem;
+
+    @media (max-width: 1300px) {
+      margin-top: 0;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 60px;
+    }
   }
   button{
     margin-top: auto;
@@ -35,5 +67,9 @@
   }
   p{
     font-size: 0.875rem;
+  }
+
+  .email-inputs {
+    margin-bottom: 20px;
   }
 }
