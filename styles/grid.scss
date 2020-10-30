@@ -79,12 +79,6 @@
   }
 }
 
-@media (max-width: 1300px) {
-  .hidden-md {
-    display: none;
-  }
-}
-
 @media (max-width: 850px) and (min-width: 601px){
   @for $i from 1 to 12 {
     .col-#{$i}-md {
@@ -97,6 +91,9 @@
 }
 
 @media (max-width: 1300px) {
+  .hidden-md {
+    display: none;
+  }
   .col-12-md {
     width: 100%;
   }
