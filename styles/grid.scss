@@ -8,7 +8,7 @@
   overflow: hidden;
   width: 100%;
 
-  &-header{
+  &-header {
     overflow: visible;
   }
 }
@@ -31,6 +31,7 @@
   .col-#{$i} {
     @include column($i);
   }
+
   .offset-col-#{$i} {
     @include offset-column($i);
   }
@@ -41,10 +42,12 @@
     .width-percent-#{$i}-sm {
       @include width-percent($i);
     }
+
     .offset-width-percent-#{$i}-sm {
       @include offset-width-percent($i);
     }
   }
+
   .center-text-sm {
     text-align: center;
   }
@@ -54,7 +57,8 @@
   }
 
   .hidden-sm {
-    position: absolute;  
+    visibility: hidden;
+    position: absolute;
     left: -999999px;
   }
 }
@@ -68,5 +72,11 @@
 .col-12-md {
   @media (max-width: 1300px) {
     width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .offset-col-1-sm {
+    @include offset-column(1);
   }
 }

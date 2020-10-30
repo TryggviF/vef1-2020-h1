@@ -163,6 +163,7 @@ br {
 
 .specs-dark-2 {
   width:38%;
+  flex-wrap: wrap;
 }
 
 .spec-item-dark {
@@ -171,7 +172,8 @@ br {
 }
 
 .spec-item-dark-2 {
-  width: 33%;
+  width: 161.75px;
+  flex-wrap: nowrap;
 }
 
 .video-h1 {
