@@ -44,4 +44,9 @@
   .center-text-sm {
     text-align: center;
   }
+
+  .hidden-sm {
+    position: absolute;  
+    left: -999999px;
+  }
 }
