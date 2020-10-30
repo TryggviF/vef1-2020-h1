@@ -16,9 +16,13 @@
     left: 0;
     right: 0;
     bottom: 0;
+
     
     img {
       float: right;
+      @media (max-width: 700px) {
+        float: left;
+      }
     }
   }
 
