@@ -143,7 +143,16 @@ br {
   height: 100%;
 }
 
+.pie-description{
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .specs-dark {
+  list-style: none;
   display: flex;
   justify-content: space-between;
   width: 75%;
@@ -180,24 +189,15 @@ br {
   top: 11.8%;
 }
 
-.row-no-margie-wargie-uwu {
-  margin:0;
-}
-
 .img-margin {
   margin-right: 13.1px;
 }
 
-.pie-description{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.row-no-margie-wargie-uwu{
+  margin: 0;
 }
 
-.specs-dark {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 20px;
+.no-padding {
+  padding: 0;
 }
+
