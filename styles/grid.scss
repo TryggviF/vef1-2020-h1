@@ -77,8 +77,19 @@
   }
 }
 
-.col-12-md {
-  @media (max-width: 1300px) {
+@media (max-width: 850px) {
+  @for $i from 1 to 12 {
+    .col-#{$i}-md {
+      @include column($i);
+    }
+    .offset-col-#{$i}-md {
+      @include offset-column($i);
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .col-12-md {
     width: 100%;
   }
 }
