@@ -154,16 +154,24 @@ br {
 .specs-dark {
   list-style: none;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 75%;
   margin-bottom: 18px;
 }
 
+.specs-dark-2 {
+  width:38%;
+}
+
 .spec-item-dark {
   display: flex;
-  flex-wrap: nowrap;
   align-items: space-between;
+}
+
+.spec-item-dark-2 {
+  width: 33%;
 }
 
 .video-h1 {
