@@ -132,7 +132,9 @@ br {
 .thumbnail {
   overflow: hidden;
   & > img {
-    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
   }
 }
 
