@@ -46,6 +46,13 @@
 }
 
 @media (max-width: 600px) {
+  @for $i from 1 to 12 {
+    .col-#{$i}-sm {
+      @include column($i);
+    }
+    .offset-col-#{$i}-sm {
+      @include offset-column($i);
+    }
   @for $i from 1 to 100 {
     .width-percent-#{$i}-sm {
       @include width-percent($i);
@@ -56,18 +63,19 @@
     }
   }
 
-  .center-text-sm {
-    text-align: center;
-  }
+    .center-text-sm {
+      text-align: center;
+    }
 
-  .margin-auto-sm {
-    margin: auto;
-  }
+    .margin-auto-sm {
+      margin: auto;
+    }
 
-  .hidden-sm {
-    visibility: hidden;
-    position: absolute;
-    left: -999999px;
+    .hidden-sm {
+      visibility: hidden;
+      position: absolute;
+      left: -999999px;
+    }
   }
 }
 
@@ -94,8 +102,4 @@
   }
 }
 
-@media (max-width: 600px) {
-  .offset-col-1-sm {
-    @include offset-column(1);
-  }
-}
+
