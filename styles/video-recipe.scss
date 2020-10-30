@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     font-weight: 700;
-    
+
     input {
       margin-right: 20px;
       height: 18px;
@@ -139,6 +139,50 @@ br {
   }
 }
 
-.video-grid{
+.video-height{
   height: 100%;
+}
+
+.specs-dark {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.spec-item-dark {
+  display: flex;
+  align-items: space-between;
+}
+
+.video-h1 {
+  margin-bottom: 18px;
+}
+
+.play-button {
+  width: 150%
+}
+
+.video-player{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.oval-position{
+  position: absolute;
+  right: 25.2%;
+  top: 10%;
+}
+
+.play-position {
+  position: absolute;
+  right: 28.5%;
+  top: 11.8%;
+}
+
+.row-no-margie-wargie-uwu {
+  margin:0;
+}
+
+.img-margin {
+  margin-right: 13.1px;
 }
