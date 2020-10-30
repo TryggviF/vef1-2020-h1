@@ -39,6 +39,35 @@
       margin-bottom: 30px;
     }
   }
+
+  &-date {
+    font-size: 0.875rem;
+    color: $gray-dark;
+    padding-top: $top-padding;
+    padding-left: $left-padding;
+    padding-right: $right-padding;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: $left-padding;
+    padding-right: $right-padding;
+    p {
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-family: 'Playfair Display',Georgia,serif;
+    }
+    a {
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif,serif;
+      font-weight: 400;
+      color: $beige;
+      text-decoration: none;
+      margin: auto;
+    }
+  }
 }
 
 
@@ -69,10 +98,13 @@ br {
   background-position: right;
 }
 
+.thumbnail {
+  overflow: hidden;
+  & > img {
+    object-fit: scale-down;
+  }
+}
+
 .video-grid{
   height: 100%;
 }
-
-
-
-
