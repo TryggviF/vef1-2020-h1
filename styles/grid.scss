@@ -23,14 +23,18 @@
   width: 100%;
 }
 
-  @for $i from 1 to 12 {
-    .col-#{$i} {
-      @include column($i);
-    }
-    .offset-col-#{$i} {
-     @include offset-column($i);
-    }
+.margin-auto {
+  margin: auto;
+}
+
+@for $i from 1 to 12 {
+  .col-#{$i} {
+    @include column($i);
   }
+  .offset-col-#{$i} {
+    @include offset-column($i);
+  }
+}
 
 @media (max-width: 600px) {
   @for $i from 1 to 100 {
