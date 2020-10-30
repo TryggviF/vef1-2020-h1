@@ -1,9 +1,10 @@
 @import 'config';
+
 .announcement {
-  position: relative;
   left: 0;
-  right: 0;
   overflow: visible;
+  position: relative;
+  right: 0;
 }
 
 .book {
@@ -12,54 +13,55 @@
   padding-top: 140px;
 
   @media (max-width: 1100px) {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
 
   &-color {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    background-color: #F7F1EB;
-    width: 100vw;
+    background-color: #f7f1eb;
     height: 80%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
   }
 
   &-info {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 50%;
 
     @media (max-width: 1100px) {
-      width: 100%;
       justify-content: center;
       text-align: center;
+      width: 100%;
     }
   }
 
   &__h4 {
     margin-bottom: 0;
+
     @media (max-width: 520px) {
       display: none;
     }
   }
-  
+
   &__h1 {
     margin-bottom: $bottom-margin;
     margin-top: 0;
+
     @media (max-width: 1100px) {
       font-size: 32px;
     }
   }
 
-
   &__p-big {
-    color: #5E5B69;
-    line-height: 2rem;
-    font-weight: 300;
+    color: #5e5b69;
     font-size: 1.125em;
+    font-weight: 300;
+    line-height: 2rem;
     margin-bottom: $bottom-margin;
 
     @media (max-width: 520px) {
@@ -68,11 +70,11 @@
   }
 
   &__p-sm {
+    color: #5e5b69;
     display: none;
-    color: #5E5B69;
-    line-height: 2rem;
-    font-weight: 300;
     font-size: 1.125em;
+    font-weight: 300;
+    line-height: 2rem;
     margin-bottom: $bottom-margin;
 
     @media (max-width: 520px) {
@@ -81,20 +83,20 @@
   }
 
   &-image {
-    width: 50%;
     display: flex;
     justify-content: end;
+    width: 50%;
 
     @media (max-width: 1100px) {
-      width: 100%;
       justify-content: center;
+      width: 100%;
     }
   }
 
   .button-center-sm {
     margin-bottom: 20px;
 
-    @media (max-width:1100px){
+    @media (max-width: 1100px) {
       margin: auto;
       margin-bottom: 20px;
     }
