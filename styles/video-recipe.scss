@@ -154,6 +154,7 @@ br {
 .specs-dark {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 75%;
   margin-bottom: 18px;
@@ -161,6 +162,7 @@ br {
 
 .spec-item-dark {
   display: flex;
+  flex-wrap: nowrap;
   align-items: space-between;
 }
 
