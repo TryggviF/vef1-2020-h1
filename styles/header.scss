@@ -5,59 +5,60 @@ $nav-margin: 20px;
 @import './config';
 
 header {
+  background-color: #fff;
   margin: auto;
   position: sticky;
   top: 0;
   z-index: 2;
-  background-color: #fff;
 }
 
 .nav {
-  display : flex;
-  flex-direction: row;
   align-items: center;
-  height : 80px;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
   justify-content: space-between;
+  margin-top: 0;
   width: 100%;
-  margin-top:0;
 
   @media (max-width: 400px) {
     padding-bottom: 7px;
   }
 
   &__logo {
-    @media (max-width: 400px){
+    @media (max-width: 400px) {
       margin-left: 16.27px;
     }
   }
 
-  &__logo-flex{
-    display:flex;
+  &__logo-flex {
+    display: flex;
     flex-direction: row;
   }
 
   &__h3 {
     color: #fff;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    @media (max-width:400px) {
-      height:100%;
-    }
     padding-bottom: 7px;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+
+    @media (max-width: 400px) {
+      height: 100%;
+    }
   }
 
   &__link-home {
-    color: #000000;
+    color: #000;
     text-decoration: none;
   }
 
   &__nav {
-    display: flex;
     align-items: center;
+    display: flex;
     height: 60px;
   }
 
   &__second {
-    height: 20px
+    height: 20px;
   }
 
   &__ul {
@@ -76,7 +77,7 @@ header {
   }
 
   &__li:last-child {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   &__link {
@@ -91,6 +92,7 @@ header {
   //bara sjánanlegt á litlum skjám
   &__li-dropdown {
     display: none;
+
     @media (max-width: 600px) {
       display: block;
       height: 90%;
@@ -98,22 +100,22 @@ header {
   }
 
   &__dropdown-main-link {
-    margin-top: 18px;
-    margin-right: 19.34px;
-    margin-bottom: 11px;
     color: #000;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 40%;
+    justify-content: space-between;
+    margin-bottom: 11px;
+    margin-right: 19.34px;
+    margin-top: 18px;
     text-decoration: none;
   }
 
   &__rectangle {
-    height: 3px;
-    width: 30px;
     background-color: #000;
     border-radius: 25px;
+    height: 3px;
+    width: 30px;
   }
 
   // ekki sjáanlegt fyrr en á _li-dropdown:hover
@@ -139,12 +141,12 @@ header {
 
   //container fyrir linka
   &-dropdown__li {
-    border-bottom: #F7F1EB 1px solid;
+    border-bottom: #f7f1eb 1px solid;
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
     width: 90%;
   }
 

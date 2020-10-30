@@ -1,4 +1,4 @@
-$max-width : 1290px;
+$max-width: 1290px;
 $gutter: 30px;
 $beige: #e3cdb1;
 $white: #fff;
@@ -19,9 +19,9 @@ $section-margin: 100px;
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: Poppins;
+  padding: 0;
 }
 
 @mixin row() {
