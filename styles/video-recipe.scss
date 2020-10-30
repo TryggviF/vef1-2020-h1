@@ -4,6 +4,37 @@
   width: 100%;
   margin-top: 90px;
 
+  &-overview {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-selection {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    
+    input {
+      margin-right: 20px;
+      height: 18px;
+      width: 18px;
+      border-radius: 10%;
+      vertical-align: middle;
+      border: 1px solid #3B4256;
+      -webkit-appearance: none;
+      outline: none;
+      cursor: pointer;
+    }
+    input:checked {
+      background-color: #ddd;
+    }
+
+    p {
+      font-family: 'Playfair Display',Georgia, serif;
+      font-size: 22px;
+    }
+  }
+
   &-heading {
     color: #d0d0d0;
     font-size: 40px;
