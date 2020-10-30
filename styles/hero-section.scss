@@ -16,7 +16,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    
+
     img {
       float: right;
     }
@@ -33,6 +33,10 @@
       font-weight: 300;
       width: 32rem;
       padding-bottom: 20px;
+
+      @media (max-width: 600px) {
+        width: 48px;
+      }
     }
     button {
       p {

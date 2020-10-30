@@ -37,6 +37,14 @@
   }
 }
 
+@media (min-width: 601px) {
+  .hidden {
+    visibility: hidden;
+    position: absolute;
+    left: -999999px;
+  }
+}
+
 @media (max-width: 600px) {
   @for $i from 1 to 100 {
     .width-percent-#{$i}-sm {
