@@ -143,8 +143,18 @@ br {
   height: 100%;
 }
 
-.specs-dark {
+.pie-description{
+  height: 100%;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.specs-dark {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 75%;
   margin-bottom: 18px;
@@ -152,6 +162,7 @@ br {
 
 .spec-item-dark {
   display: flex;
+  flex-wrap: nowrap;
   align-items: space-between;
 }
 
@@ -180,24 +191,15 @@ br {
   top: 11.8%;
 }
 
-.row-no-margie-wargie-uwu {
-  margin:0;
-}
-
 .img-margin {
   margin-right: 13.1px;
 }
 
-.pie-description{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.row-no-margie-wargie-uwu{
+  margin: 0;
 }
 
-.specs-dark {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 20px;
+.no-padding {
+  padding: 0;
 }
+
