@@ -54,3 +54,15 @@
     left: -999999px;
   }
 }
+
+@media (max-width: 1300px) {
+  .hidden-md {
+    display: none;
+  }
+}
+
+.col-12-md {
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
+}
