@@ -50,6 +50,7 @@
     .col-#{$i}-sm {
       @include column($i);
     }
+
     .offset-col-#{$i}-sm {
       @include offset-column($i);
     }
@@ -85,6 +86,7 @@
     .col-#{$i}-md {
       @include column($i);
     }
+
     .offset-col-#{$i}-md {
       @include offset-column($i);
     }

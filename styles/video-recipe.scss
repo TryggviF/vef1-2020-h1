@@ -221,7 +221,7 @@ br {
   margin-bottom: 18px;
 
   @media(max-width: 600px) {
-  font-size: 200%;
+    font-size: 200%;
   }
 }
 
@@ -240,9 +240,9 @@ br {
   right: 18.7%;
   top: 42%;
 
-  @media(max-width: 500px){
-  right:10%;
-  top:25%;
+  @media(max-width: 500px) {
+    right: 10%;
+    top: 25%;
   }
 }
 
