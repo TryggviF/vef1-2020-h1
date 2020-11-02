@@ -1,17 +1,18 @@
-@import './config.scss';
+@import './config';
+
 .newsletter {
   background-color: $black;
+  color: #fff;
   height: 330px;
-  color: white;
-  
+
   @media (max-width: 1300px) {
     height: auto;
   }
 
   &-box {
     @media (max-width: 1300px) {
-      flex-direction: column;
       align-items: center;
+      flex-direction: column;
       margin-top: 64px;
     }
   }
@@ -20,7 +21,7 @@
     margin-bottom: 40px;
 
     @media (max-width: 1300px) {
-      text-align: center; 
+      text-align: center;
 
       h3 {
         font-size: 20px;
@@ -31,41 +32,47 @@
   .grid {
     height: 100%;
   }
+
   .row {
-    height: 100%;
     align-content: center;
+    height: 100%;
   }
+
   .subscriptions {
+    align-content: center;
     display: flex;
     justify-content: space-between;
-    align-content: center;
     margin-top: -2.75rem;
 
     @media (max-width: 1300px) {
-      margin-top: 0;
-      flex-direction: column;
       align-items: center;
+      flex-direction: column;
       margin-bottom: 60px;
+      margin-top: 0;
     }
   }
-  button{
-    margin-top: auto;
+
+  button {
     margin-bottom: 1rem;
+    margin-top: auto;
   }
-  input{
+
+  input {
     background-color: transparent;
-    color: $white;
     border: 0;
     border-bottom: 1px solid $beige;
-    margin-bottom: 1rem;
+    color: $white;
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 1.375rem;
     font-weight: 700;
+    margin-bottom: 1rem;
   }
-  input::placeholder{
+
+  input::placeholder {
     color: #525252;
   }
-  p{
+
+  p {
     font-size: 0.875rem;
   }
 
