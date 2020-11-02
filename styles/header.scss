@@ -130,7 +130,7 @@ header {
   }
 
   // dropdown þegar sjáanlegt
-  &__li-dropdown:hover>&-dropdown {
+  &__li-dropdown:hover > &-dropdown {
     display: flex;
     flex-direction: column;
     height: 100vh;

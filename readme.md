@@ -18,16 +18,16 @@ styles möppu og síðan sameinaðir í styles.scss, sem skal síðan þýða ti
 * Video recipe finnst með því að smella á *'Videos'* í valmynd efst
 * Grid-Overlay er kommentað út, en finnst í head sérhvers HTML skjals
 ### Uppbygging SCSS skjala
-* announcement.scss geymir css stíla fyrir bókartilkynningu í index.html
-* config.scss geymir helstu breytur, og skilgreiningu á föllum fyrir column og row
-* footer.scss geymir stíla fyrir fót sérhverrar vefsíðu
-* global.scss geymir stíla fyrir öll html element sem eiga ekki tiltekinn stíl, sem og lóðréttar línur
-* grid.scss geymir stíla fyrir grid, column og row, sem nýtast þegar hlutir skalast niður
-* header.scss geymir stíla fyrir haus sérhverrar síðu
-* hero-section.scss geymir stíla fyrir "Hero section" í index, recipe og video-recipe
-* newsletter.scss geymir stíla fyrir "Newsletter" sectionið
-* recipecard.scss geymir stíla fyrir uppskriftarspjöld sem finnast í index, recipe-overview og video-recipe
-* video-recipe.scss geymir síla fyrir myndbandsspjöld sem finnast í index og recipe
+* `announcement.scss` geymir css stíla fyrir bókartilkynningu í index.html
+* `config.scss` geymir helstu breytur, og skilgreiningu á föllum fyrir column og row
+* `footer.scss` geymir stíla fyrir fót sérhverrar vefsíðu
+* `global.scss` geymir stíla fyrir öll html element sem eiga ekki tiltekinn stíl, sem og lóðréttar línur
+* `grid.scss` geymir stíla fyrir grid, column og row, sem nýtast þegar hlutir skalast niður
+* `header.scss` geymir stíla fyrir haus sérhverrar síðu
+* `hero-section.scss` geymir stíla fyrir "Hero section" í index, recipe og video-recipe
+* `newsletter.scss` geymir stíla fyrir "Newsletter" sectionið
+* `recipecard.scss` geymir stíla fyrir uppskriftarspjöld sem finnast í index, recipe-overview og video-recipe
+* `video-recipe.scss` geymir síla fyrir myndbandsspjöld sem finnast í index og recipe
 
 ## Þáttakendur verkefnis
 
