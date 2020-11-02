@@ -1,8 +1,8 @@
 @import './config';
 
 .recipe {
-  width: 100%;
   margin-top: 90px;
+  width: 100%;
 
   &-overview {
     display: flex;
@@ -10,29 +10,29 @@
   }
 
   &-selection {
-    display: flex;
     align-items: center;
+    display: flex;
     font-weight: 700;
+  }
 
-    input {
-      margin-right: 20px;
-      height: 18px;
-      width: 18px;
-      border-radius: 10%;
-      vertical-align: middle;
-      border: 1px solid #3B4256;
-      -webkit-appearance: none;
-      outline: none;
-      cursor: pointer;
-    }
-    input:checked {
-      background-color: #ddd;
-    }
+  &-selection input {
+    -webkit-appearance: none;
+    border: 1px solid #3b4256;
+    border-radius: 10%;
+    height: 18px;
+    margin-right: 20px;
+    outline: none;
+    vertical-align: middle;
+    width: 18px;
+  }
 
-    p {
-      font-family: 'Playfair Display',Georgia, serif;
-      font-size: 22px;
-    }
+  &-selection input:checked {
+    background-color: #ddd;
+  }
+
+  &-selection p {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 22px;
   }
 
   &-heading {
@@ -41,42 +41,40 @@
     margin-bottom: 40px;
   }
 
-  &__ingredient {
-    p {
-      font-size: 18px;
-    }
+  &__ingredient p {
+    font-size: 18px;
+  }
 
-    h3 {
-      color: #E3CDB1;
-      display: inline;
-      font-size: 36px;
-      margin-right: 50px;
-    }
+  &__ingredient h3 {
+    color: #e3cdb1;
+    display: inline;
+    font-size: 36px;
+    margin-right: 50px;
+  }
 
-    &-list {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      font-weight: 300;
-    }
+  &__ingredient-list {
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   &__method {
-    color: #5E5B69;
+    color: #5e5b69;
     font-size: 18px;
     font-weight: 300;
     line-height: 32px;
+  }
 
-    p {
-      margin-bottom: 30px;
-    }
+  &__method p {
+    margin-bottom: 30px;
   }
 
   &-date {
-    font-size: 0.875rem;
     color: $gray-dark;
-    padding-top: $top-padding;
+    font-size: 0.875rem;
     padding-left: $left-padding;
     padding-right: $right-padding;
+    padding-top: $top-padding;
   }
 
   &-content {
@@ -85,29 +83,32 @@
     justify-content: space-between;
     padding-left: $left-padding;
     padding-right: $right-padding;
-    p {
-      font-size: 1.5rem;
-      font-weight: 700;
-      font-family: 'Playfair Display',Georgia,serif;
-    }
-    a {
-      font-size: 1rem;
-      font-family: 'Poppins', sans-serif,serif;
-      font-weight: 400;
-      color: $beige;
-      text-decoration: none;
-      margin: auto;
-    }
+  }
+
+  &-content p {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &-content a {
+    color: $beige;
+    font-family: 'Poppins', sans-serif, serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: auto;
+    text-decoration: none;
   }
 }
 
-
 .video-section {
   margin-bottom: $section-margin;
+
   button {
     margin: 0 auto;
     margin-top: 50px;
   }
+
   &__footer {
     display: flex;
   }
@@ -118,62 +119,62 @@ br {
 }
 
 .video-image {
-  margin: 0 auto;
-  height: 569.99px;
-  width: 100vw;
   background-color: #000;
-  color:  #ffffff;
-  background-image: linear-gradient(to right, $black 40%, $transparent 80%),
-  url("img/pie-video-image.png");
-  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, $black 40%, $transparent 80%), url('img/pie-video-image.png');
   background-position: right;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 569.99px;
+  margin: 0 auto;
   margin-bottom: 10px;
+  width: 100vw;
 }
 
 .thumbnail {
   overflow: hidden;
-  & > img {
-    width: 100%;
+
+  img {
     height: 100%;
     object-fit: fill;
+    width: 100%;
   }
 }
 
-.video-height{
+.video-height {
   height: 100%;
 }
 
-.pie-description{
-  height: 100%;
+.pie-description {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
   justify-content: center;
 }
 
 .specs-dark {
-  list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 75%;
+  list-style: none;
   margin-bottom: 18px;
+  width: 75%;
 }
 
 .specs-dark-2 {
-  width:38%;
   flex-wrap: wrap;
+  width: 38%;
 }
 
 .spec-item-dark {
-  display: flex;
   align-items: space-between;
+  display: flex;
 }
 
 .spec-item-dark-2 {
-  width: 161.75px;
   flex-wrap: nowrap;
+  width: 161.75px;
 }
 
 .video-h1 {
@@ -181,15 +182,15 @@ br {
 }
 
 .play-button {
-  width: 150%
+  width: 150%;
 }
 
-.video-player{
+.video-player {
   display: flex;
   justify-content: space-evenly;
 }
 
-.oval-position{
+.oval-position {
   position: absolute;
   right: 25.2%;
   top: 10%;
@@ -205,11 +206,10 @@ br {
   margin-right: 13.1px;
 }
 
-.row-no-margie-wargie-uwu{
+.row-no-margie-wargie-uwu {
   margin: 0;
 }
 
 .no-padding {
   padding: 0;
 }
-
