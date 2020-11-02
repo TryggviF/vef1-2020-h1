@@ -1,47 +1,51 @@
 //TODO Útfæra stýla fyrir spjöld
 // Sækja config
 @import './config';
+
 .recipe-card {
   background-color: $white;
-  justify-content: space-between;
   display: flex;
   flex-direction: column;
   height: 390px;
+  justify-content: space-between;
   margin-bottom: $bottom-margin;
   padding-bottom: $bottom-padding;
-  .recipe-image{
-    img {
-      height: 290px;
-      width: 100%;
-      object-fit: cover;
-    }
+
+  .recipe-image img {
+    height: 290px;
+    object-fit: cover;
+    width: 100%;
   }
-  .recipe-date{
-    font-size: 0.875rem;
+
+  .recipe-date {
     color: $gray-dark;
-    padding-top: $top-padding;
+    font-size: 0.875rem;
     padding-left: $left-padding;
     padding-right: $right-padding;
+    padding-top: $top-padding;
   }
-  .recipe-content{
+
+  .recipe-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-left: $left-padding;
     padding-right: $right-padding;
-    p {
-      font-size: 1.5rem;
-      font-weight: 700;
-      font-family: 'Playfair Display',Georgia,serif;
-    }
-    a {
-      font-size: 1rem;
-      font-family: 'Poppins', sans-serif,serif;
-      font-weight: 400;
-      color: $beige;
-      text-decoration: none;
-      margin: auto;
-    }
+  }
+
+  .recipe-content p {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .recipe-content a {
+    color: $beige;
+    font-family: 'Poppins', sans-serif, serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: auto;
+    text-decoration: none;
   }
 }
 
@@ -51,22 +55,23 @@
 
 .latest-recipes-section {
   margin-bottom: $section-margin;
+
   button {
     margin: 0 auto;
     margin-top: 50px;
   }
+
   &__footer {
     display: flex;
   }
 }
 
 .recipe-hero {
-  margin: 0 auto;
-  height: 720px;
-  width: 100vw;
-  margin-bottom: 10px;
-  background-image: url("img/pumpkin-pie.png");
-  background-repeat: no-repeat;
+  background-image: url('img/pumpkin-pie.png');
   background-position: right;
+  background-repeat: no-repeat;
+  height: 720px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 100vw;
 }
-
