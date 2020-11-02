@@ -219,10 +219,15 @@ br {
 
 .video-h1 {
   margin-bottom: 18px;
+
+  @media(max-width: 600px) {
+  font-size: 200%;
+  }
 }
 
 .play-button {
   width: 150%;
+  position: relative;
 }
 
 .video-player {
@@ -232,14 +237,25 @@ br {
 
 .oval-position {
   position: absolute;
-  right: 25.2%;
-  top: 10%;
+  right: 18.7%;
+  top: 42%;
+
+  @media(max-width: 500px){
+  right:10%;
+  top:25%;
+  }
 }
 
 .play-position {
   position: absolute;
-  right: 28.5%;
-  top: 11.8%;
+  right: 19%;
+  top: 51.5%;
+  margin-right: 50px;
+
+  @media (max-width: 500px) {
+    top: 34.5%;
+    right: 10%;
+  }
 }
 
 .img-margin {
