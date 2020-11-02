@@ -3,8 +3,8 @@
 
 // Hér skal nota scss @for til að ítra út klösum fyrir grid
 .grid {
-  max-width: $max-width;
   margin: auto;
+  max-width: $max-width;
   overflow: hidden;
   width: 100%;
 
@@ -39,9 +39,9 @@
 
 @media (min-width: 601px) {
   .hidden {
-    visibility: hidden;
-    position: absolute;
     left: -999999px;
+    position: absolute;
+    visibility: hidden;
   }
 }
 
@@ -53,15 +53,16 @@
     .offset-col-#{$i}-sm {
       @include offset-column($i);
     }
-  @for $i from 1 to 100 {
-    .width-percent-#{$i}-sm {
-      @include width-percent($i);
-    }
 
-    .offset-width-percent-#{$i}-sm {
-      @include offset-width-percent($i);
+    @for $i from 1 to 100 {
+      .width-percent-#{$i}-sm {
+        @include width-percent($i);
+      }
+
+      .offset-width-percent-#{$i}-sm {
+        @include offset-width-percent($i);
+      }
     }
-  }
 
     .center-text-sm {
       text-align: center;
@@ -72,14 +73,14 @@
     }
 
     .hidden-sm {
-      visibility: hidden;
-      position: absolute;
       left: -999999px;
+      position: absolute;
+      visibility: hidden;
     }
   }
 }
 
-@media (max-width: 850px) and (min-width: 601px){
+@media (max-width: 850px) and (min-width: 601px) {
   @for $i from 1 to 12 {
     .col-#{$i}-md {
       @include column($i);
@@ -94,9 +95,8 @@
   .hidden-md {
     display: none;
   }
+
   .col-12-md {
     width: 100%;
   }
 }
-
-
