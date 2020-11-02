@@ -101,6 +101,34 @@ section {
   }
 }
 
+.container {
+  background-color: #E3CDB1A0;
+  background-image: url("img/Play-Icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%
+}
+
+.video-img {
+  transition: ease .5s;
+  opacity: 1;
+  backface-visibility: hidden;
+}
+
+.video-img:hover {
+  opacity: 0.5;
+}
+
+.container:hover {
+  opacity: 1;
+}
+
 
 
 
