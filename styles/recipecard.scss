@@ -59,12 +59,12 @@
   position: relative;
 
   &-color {
-    position: absolute;
+    background-color: #fafafa;
+    bottom: 0;
     height: 66%;
     left: 0;
+    position: absolute;
     right: 0;
-    bottom: 0;
-    background-color: #fafafa;
     z-index: -1;
   }
 
