@@ -13,6 +13,11 @@ sem og stylelint-config-standard og stylelint-config-sass-guidelines.
 Allar myndir eru geymdar í img möppu og allir stýlar eru settir í
 styles möppu og síðan sameinaðir í styles.scss, sem skal síðan þýða til að keyra síðuna með réttu sniði
 
+* Recipe Overview finnst með því að smella á *'Recipes'* í valmynd efst
+* Recipe finnst með því að smella á *'Read more'* á venjuleg uppskriftarspjöld
+* Video recipe finnst með því að smella á *'Videos'* í valmynd efst
+* Grid-Overlay er kommentað út, en finnst í head sérhvers HTML skjals
+
 ## Þáttakendur verkefnis
 
 Þáttakendur þessa verkefnis eru: 
